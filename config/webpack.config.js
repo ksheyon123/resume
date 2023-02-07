@@ -14,6 +14,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      src: path.resolve(__dirname, "..", "src"),
       components: path.resolve(__dirname, "..", "src"),
     },
     extensions: [".js", ".jsx", ".ts", ".tsx"],
@@ -39,6 +40,18 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         use: "ts-loader",
         exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },
