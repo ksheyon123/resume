@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { theme } from "src/Styles/theme";
-import { Layout, Header, Title, Description } from "src/Components/index";
+import { Layout, Header, Title, Description, Skills } from "src/Components/index";
 
 const GlobalStyling = createGlobalStyle`
   * {
@@ -23,6 +23,11 @@ const App = () => {
           <Header />
           <Description />
           <Title title={"Skills"} />
+          <Skills />
+          <Title title={"Job Experience"} />
+          <Title title={"Projects"} />
+          <Title title={"Education"} />
+
         </Layout>
       </ThemeProvider>
     </React.StrictMode>

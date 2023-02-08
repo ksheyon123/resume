@@ -37,6 +37,41 @@ module.exports = {
         },
       },
       {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10000,
+          },
+        },
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: require.resolve("@svgr/webpack"),
+            options: {
+              prettier: false,
+              svgo: false,
+              svgoConfig: {
+                plugins: [{ removeViewBox: false }],
+              },
+              titleProp: true,
+              ref: true,
+            },
+          },
+          {
+            loader: require.resolve("file-loader"),
+            options: {
+              name: "static/media/[name].[hash].[ext]",
+            },
+          },
+        ],
+        issuer: {
+          and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
+        },
+      },
+      {
         test: /\.(ts|tsx)$/,
         use: "ts-loader",
         exclude: /node_modules/,
@@ -44,10 +79,6 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,

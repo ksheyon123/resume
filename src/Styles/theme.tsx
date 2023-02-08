@@ -14,9 +14,14 @@ const theme = {
     fontWeight: 600,
   },
 
+
   b1: {
-    fontSize: "24px",
+    fontSize: "32px",
     fontWeigth: 400
+  },
+  b1b: {
+    fontSize: "32px",
+    fontWeigth: 600
   }
 }
 

@@ -17,6 +17,7 @@ const Title: React.FC<IProps> = ({ title }) => {
 
 const StyledView = styled.div`
   ${theme.t1};
+  font-family: AmericanCap;
   font-style : normal;
   line-height: 40px;
   padding : 4px;
