@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { theme } from "src/Styles/theme";
-import { Layout, Header, Title, Description, Skills } from "src/Components/index";
+import { Layout, Header, Title, Description, Skills, Experiences } from "src/Components/index";
 
 const GlobalStyling = createGlobalStyle`
   * {
@@ -25,7 +25,9 @@ const App = () => {
           <Title title={"Skills"} />
           <Skills />
           <Title title={"Job Experience"} />
+          <Experiences />
           <Title title={"Projects"} />
+
           <Title title={"Education"} />
 
         </Layout>

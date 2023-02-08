@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { theme } from "src/Styles/theme";
 interface IProps {
   children: any
 }
@@ -17,28 +17,22 @@ const StyledView = styled.div`
   width : 1200px;
   height : 100vh;
   margin : 0px auto;
+  background-color : ${theme.mono2};
+  padding : 0px 10px;
   @media screen and (max-width : 1200px) {
     width : 960px;
-  height : 100vh;
-  margin : 0px auto;
-
-  background-color: #222;
-
+    height : 100vh;
+    margin : 0px auto;
   }
   @media screen and (max-width : 960px) {
     width : 600px;
     height : 100vh;
-  margin : 0px auto;
-
-  background-color: #444;
-
+    margin : 0px auto;
   }
   @media screen and (max-width : 600px) {
     width : 375px;
-  height : 100vh;
-  margin : 0px auto;
-  background-color: #666;
-
+    height : 100vh;
+    margin : 0px auto;
   }
 `;
 

@@ -9,24 +9,22 @@ import logo_react from "src/Assets/react_logo.svg";
 const Skills: React.FC = () => {
   return (
     <StyledView>
-      <span>React</span>
-      <span>Javascript</span>
-      <span>Typescript</span>
-      <span>ElectronJs</span>
+      <span>React Javascript Typescript ElectronJs</span>
     </StyledView>
 
   )
 }
 
 const StyledView = styled.div`
-  display: flex;
-  align-items: center;
+display: block;
   padding-top : 16px;
   padding : 16px 5px;
+  width: 100%;
+
   & > span {
     ${theme.b1b};
     color : ${theme.mono6};
-  font-style: normal;
+    font-style: normal;
     margin-right : 12px;
     &:last-child {
       margin-right : 0px;
