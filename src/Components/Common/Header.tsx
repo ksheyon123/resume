@@ -1,31 +1,41 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "src/Styles/theme";
 
 const Header: React.FC = () => {
   return (
     <StyledHeader>
-      KANG SEO HYEON
-      <div className="job">
-        Jr. Web developer
+      <div className="author">
+        <span>KANG SEO HYEON</span>
       </div>
+      <span className="job">
+        Jr. Web developer
+      </span>
     </StyledHeader>
   )
 }
 
 const StyledHeader = styled.header`
-  position: relative;
-    font-family: AmericanCap;
-    font-weight: 600;
-    font-size : 42px;
-  & > div.job {
-    position : absolute;
+    color : ${theme.mono8};
+    padding-top : 20px;
+    & > div.author {
+      display: block;
+      width : 375px;
+      & > span {
+        font-family: AmericanCap;
+        font-weight: 600;
+        font-size : 68px;
+      }
+    }
+  & > span.job {
+    display: inline;
     font-family: Tomatoes;
     font-weight: 600;
     font-size : 20px;
-    left : 80px;
-    top : 20px;
     text-decoration: underline;
+    text-align: right;
   }
+  
 `;
 
 export { Header }

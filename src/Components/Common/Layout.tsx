@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Header } from "src/Components/index";
 
 interface IProps {
   children: any
@@ -9,7 +8,6 @@ interface IProps {
 const Layout: React.FC<IProps> = ({ children }) => {
   return (
     <StyledView>
-      <Header />
       {children}
     </StyledView>
   )
