@@ -16,7 +16,7 @@ import {
 const GlobalStyling = createGlobalStyle`
   ${reset};
   * {
-    box-sizing  : content-box;
+    box-sizing  : border-box;
     font-style: normal;
     font-size : 14px;
     font-family : NotoSansKr;
@@ -25,7 +25,7 @@ const GlobalStyling = createGlobalStyle`
   body {
     margin : 0px;
     background-color : ${theme.mono2};
-
+    color : ${theme.mono8};
   }
 `;
 

@@ -22,7 +22,7 @@ display: block;
   width: 100%;
 
   & > span {
-    ${theme.b1b};
+    ${theme.b1m};
     color : ${theme.mono6};
     font-style: normal;
     margin-right : 12px;

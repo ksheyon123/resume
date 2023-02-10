@@ -2,7 +2,7 @@ import { ExperienceType } from "src/Constants/types";
 
 const JOB_EXPERIENCE: { [key: number]: ExperienceType } = {
   0: {
-    name: "Parameta (Iconloop)",
+    name: "파라메타 (구 Iconloop)",
     location: "",
     duration: {
       from: new Date("2021/01/04").valueOf(),
