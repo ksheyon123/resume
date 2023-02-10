@@ -1,6 +1,8 @@
-export { Layout } from "./Common/Layout";
-export { Header } from "./Common/Header";
-export { Description } from "./Common/Description";
-export { Title } from "./Common/Title";
-export { Skills } from "./Common/Skills";
-export { Experiences } from "./Common/Experiences";
+export { Layout } from "./View/Layout";
+export { Header } from "./View/Header";
+export { Description } from "./View/Description";
+export { Title } from "./View/Title";
+export { Skills } from "./View/Skills";
+export { Experiences } from "./View/Experiences";
+export { Education } from "./View/Education";
+export { Awards } from "./View/Awards";

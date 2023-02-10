@@ -42,4 +42,53 @@ const PROJECTS = {
   }
 }
 
-export { JOB_EXPERIENCE }
+const EDUCATION = {
+  0: {
+    institution: "서울과학기술대학교",
+    major: "기계공학과",
+    duration: {
+      from: "2011",
+      to: "2018"
+    },
+  },
+  1: {
+    institution: "서울과학기술대학교",
+    major: "기계공학과",
+    duration: {
+      from: "2011",
+      to: "2018"
+    },
+
+  }
+}
+
+const AWARDS = {
+  0: {
+    institution: "과학기술정보통신부",
+    name: "2019 블록체인 아이디어톤",
+    prize: "장관상",
+    project: {
+      name: "트러커",
+      description: "하이브리드 블록체인(Ethereum & Hyperledger Fabric)을 활용한 화물 유통 플랫폼",
+    },
+    date: new Date("2019/11/30").valueOf(),
+    link: {
+      github: ""
+    }
+  },
+  1: {
+    institution: "경기도경제과학진흥원",
+    name: "2019 경기도 블록체인 해커톤",
+    prize: "장려상",
+    project: {
+      name: "마인드허브",
+      description: "퍼블릭 블록체인을 활용한 핸드메이드 쇼핑몰",
+    },
+    date: new Date("2019/09/26").valueOf(),
+    link: {
+      github: ""
+    }
+  }
+}
+
+export { JOB_EXPERIENCE, AWARDS, EDUCATION }

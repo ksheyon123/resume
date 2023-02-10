@@ -8,7 +8,9 @@ import {
   Title,
   Description,
   Skills,
-  Experiences
+  Experiences,
+  Awards,
+  Education
 } from "src/Components/index";
 
 const GlobalStyling = createGlobalStyle`
@@ -17,9 +19,13 @@ const GlobalStyling = createGlobalStyle`
     box-sizing  : content-box;
     font-style: normal;
     font-size : 14px;
+    font-family : NotoSansKr;
+    font-weight : 400;
   }
   body {
     margin : 0px;
+    background-color : ${theme.mono2};
+
   }
 `;
 
@@ -36,8 +42,10 @@ const App = () => {
           <Skills />
           <Title title={"Job Experience"} />
           <Experiences />
-          <Title title={"Projects"} />
+          <Title title={"Award"} />
+          <Awards />
           <Title title={"Education"} />
+          <Education />
         </Layout>
       </ThemeProvider>
     </React.StrictMode>
